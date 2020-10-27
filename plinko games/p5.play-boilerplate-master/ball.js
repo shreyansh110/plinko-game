@@ -1,9 +1,9 @@
 class Ball{
-constructer(x,y,radius){
+constructor(x,y,radius){
 var options={
 'restitution':1,
-'density':3,
 'friction':2,
+'density':3,
 isStatic:true
 
 
@@ -19,7 +19,7 @@ var pis=this.body.position
 push();
 translate(pis.x,pis.y);
 ellipseMode(RADIUS);
-ellipse(0,0,this.radius);
+circle(0,0,this.radius);
 pop();
 }
     
